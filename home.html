@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduct Myseelf</title>
+    <link rel="stylesheet" type = "text/css" href="home.css">
+</head>
+<body>
+
+    <div class ="preloader"></div>
+
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class = "active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="image\stars.png" id = "stars">
+        <img src="image\city back.png" id = "city">
+        <h2 id = "text">HELLO</h2>
+        <a href="#sec" id = "btn">WOW</a>
+    </section>
+    <div class = "sec" id = "sec">
+        <h2>SAY SOMETHING</h2>
+        <p>asdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffff<br><br>asdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffasdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffff<br><br>asdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffff            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffasdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffasdsadadsadasdhbhhjhsfudsfisudhfsdffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffff
+            ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            fffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+
+            
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let city = document.getElementById('city');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('herder');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            city.style.top = value * 0.25 + 'px';
+            text.style.marginBottom = value * 3 + 'px';
+            btn.style.marginBottom = value * 1.5 + 'px';
+            herder.style.top = value * 0.25 + 'px';
+        })
+    </script>
+
+    <script>
+        var preloader = document.querySelector(".preloader")
+
+        window.addEventListener("load", vanish);
+
+        function vanish(){
+            preloader.classList.add("disppear")
+        }
+    </script>
+
+</body>
+</html>
